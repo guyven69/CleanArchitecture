@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Infra.Data.Repository
 {
-    public class CourseReposity : ICourseRepository
+    public class CourseRepository : ICourseRepository
     {
         private readonly UniversityDbContext _ctx;
 
-        public CourseReposity(UniversityDbContext universityDbContext)
+        public CourseRepository(UniversityDbContext universityDbContext)
         {
             this._ctx = universityDbContext;
         }
